@@ -1,13 +1,6 @@
 #pragma once
 
-
-#include<vector>
-#include<iostream>
-#include<time.h>
-
-using std::cout;
-using std::endl;
-
+#include "Common.h"
 
 #ifdef _WIN32
 #include <Windows.h>
@@ -28,6 +21,7 @@ inline static void* SystemAlloc(size_t kpage)
     return ptr;
 }
 
+// ¶¨³¤ÄÚ´æ³Ø
 template<class T>
 class ObjectPool
 {
